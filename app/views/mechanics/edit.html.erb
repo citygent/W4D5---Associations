@@ -1,0 +1,16 @@
+<h1>Update <%= @mechanic.name %>'s details...</h1>
+
+<%= form_for @mechanic do |form| %>
+  <div class="field">
+    <%= form.label :name, 'Full Name:' %>
+    <%= form.text_field :name %>
+  </div>
+    <div class="field">
+    <%= form.label :shop, 'Location:' %>
+    <%= form.text_field :shop %>
+  </div>
+  <div class="action">
+    <%= form.submit 'Edit Details' %>
+  </div>
+<% end %>
+

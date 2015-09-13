@@ -1,0 +1,5 @@
+<h2><%= @mechanic.name %></h2>
+<h2><%= @mechanic.shop %></h2>
+
+<%= link_to 'Update Details', edit_mechanic_path(@mechanic) %>
+<%= link_to 'Sack employee', @mechanic, method: :delete %>

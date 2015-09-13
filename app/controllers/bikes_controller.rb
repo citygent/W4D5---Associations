@@ -12,7 +12,7 @@ class BikesController < ApplicationController
     bike = Bike.new(bike_params)
 
     if bike.save
-      redirect to bike
+      redirect_to bike
     else
       render :new
     end
@@ -38,9 +38,8 @@ class BikesController < ApplicationController
   end
 
   def destroy 
-    bike = Bike.find(params[:id])
-
-    redirect_to root_path
+    bike = Bike.find(params[:id]).destroy
+    redirect_to bikes_path
   end
 
   private

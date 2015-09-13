@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  # root 'errrrr?'
+
   #need custom routes for 
 
   resources :bikes

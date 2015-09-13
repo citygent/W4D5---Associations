@@ -1,0 +1,16 @@
+<h1>New Service Report</h1>
+
+<%= form_for @service do |form| %>
+  <div class="field">
+    <%= form.label :product, 'Work Done:' %>
+    <%= form.text_field :product %>
+  </div>
+    <div class="field">
+    <%= form.label :price, 'Charge:' %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="action">
+    <%= form.submit 'Create Sale' %>
+  </div>
+<% end %>

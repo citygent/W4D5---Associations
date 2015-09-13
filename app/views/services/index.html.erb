@@ -1,0 +1,5 @@
+<h1>All Service Reports</h1>
+
+<% @services.each do |service| %>
+  <h2><%= link_to "#{service.product} on #{service.bike.brand}", service %></h2>
+<% end %>

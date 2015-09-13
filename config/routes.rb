@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  #need custom routes for 
+
+  resources :bikes
+  resources :mechanics
+  resources :services
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,5 @@
+<h1>All Bikes</h1>
+
+<% @bikes.each do |bike| %>
+  <h2><%= link_to bike.brand, bike %></h2>
+<% end %>

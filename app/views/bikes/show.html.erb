@@ -1,0 +1,6 @@
+<h2><%= @bike.brand %></h2>
+<h2><%= @bike.colour %></h2>
+<h2><%= @bike.owner %></h2>
+
+<%= link_to 'Edit Bike', edit_bike_path(@bike) %>
+<%= link_to 'Delete Bike', @bike, method: :delete %>

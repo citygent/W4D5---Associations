@@ -1,0 +1,19 @@
+<h1>New Bike</h1>
+
+<% form_for @bike do |form| %>
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+    <div class="field">
+    <%= form.label :colour %>
+    <%= form.text_field :colour %>
+  </div>
+    <div class="field">
+    <%= form.label :owner %>
+    <%= form.text_field :owner %>
+  </div>
+  <div class="action">
+    <%= form.submit 'Add Bike' %>
+  </div>
+<% end %>

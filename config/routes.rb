@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  # root 'errrrr?'
+  root 'services#index'
 
   #need custom routes for 
 

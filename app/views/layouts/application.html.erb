@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav>
+  <ul>
+    <li><%= link_to 'New Job', new_service_path %></li>
+    <li><%= link_to 'Current Jobs', services_path %></li>
+    <li><%= link_to 'Bikes In', bikes_path %></li>
+    <li><%= link_to 'Employees', mechanics_path %></li>
+  </ul>
+</nav>
 <%= yield %>
 
 </body>
